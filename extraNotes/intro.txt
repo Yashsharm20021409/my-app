@@ -1,0 +1,16 @@
+1. html k under ek div compent h jo ki js ki help se operate hoga
+2. app.js :- ek component h of react.js and similar this we can create other components and then add into app.js
+   hmre sare component (src folder k under rhte h)
+
+3. index.js :- ye entry point h jse app dhk skte h vo ek app component ko render krne me help kr rha h(means run krne m)
+   uske bd jo line h (document.getElementById('root')) eska mtlb h jo bhi component h use es div me lekr jao
+   this is the main file to run  component and this is the file which operate root div present in index.html
+
+4. there are two types of component in react
+   1. class based
+   2. function based(check in app.js)
+
+
+advantage 
+
+lightweight application bnane k lie ek single html file and multiple js file 

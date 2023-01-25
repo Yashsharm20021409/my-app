@@ -1,0 +1,8 @@
+propes:- in video no.2 cwh at 12:50
+let suppose there is a component known as form(jo name,phone no. etc lete h) form k under jo value dalnge vo propes h
+
+states:- at 12:58
+let suppose there is a component having heading yash and content (this this this h.) bacically you can change the heading and content of that 
+container on the basis of user interaction,http req,res,etc
+
+(ek component k under kya kya details h like hading content is called state or propes of component is that hm kuch propes(values) bhj k us component ki state ko change kr skte h)
