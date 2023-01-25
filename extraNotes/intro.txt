@@ -10,6 +10,7 @@
    1. class based
    2. function based(check in app.js)
 
+5. why we use 'use strict" mode :- to avoid nay kind of bug problem(avoid direct declartion of varibale without data type) and many more reasons main is avoid bugs
 
 advantage 
 
