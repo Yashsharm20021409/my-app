@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // this is the initial position of jsx fragment
+    <>
+      {/* this is actually we are passing the props to chnage something manully by user */}
+      <Navbar title="TextUtils" aboutText="About TextUtils"/>
+    </>
+    // above closing tag is the final position of jsx fragment
   );
 }
 

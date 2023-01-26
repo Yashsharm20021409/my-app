@@ -1,0 +1,29 @@
+import "./App.css";
+
+let name = "Yash";
+
+function App() {
+  return (
+    // this is the initial position of jsx fragment
+    <>
+      <nav className="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>More</li>
+      </nav>
+      
+      {/* anything inside {} known as javaScript in JSX Which is Not Possible in HTML (you can also insert a img inside braces)*/}
+
+      <h1>Hi {name}</h1> 
+      <div className="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
+        laudantium ratione deleniti voluptates vero iste animi facilis dicta
+        aliquam. Fugit alias exercitationem eveniet sint ratione? Explicabo
+        numquam nemo ad sunt!
+      </div>
+    </>
+    // above closing tag is the final position of jsx fragment
+  );
+}
+
+export default App;

@@ -7,11 +7,61 @@
    this is the main file to run  component and this is the file which operate root div present in index.html
 
 4. there are two types of component in react
-   1. class based
+   1. class based :- phle used hote th lkn ab func based prefer krte h bcoz they are easy to implement as compared to class based
    2. function based(check in app.js)
 
 5. why we use 'use strict" mode :- to avoid nay kind of bug problem(avoid direct declartion of varibale without data type) and many more reasons main is avoid bugs
 
 advantage 
 
-lightweight application bnane k lie ek single html file and multiple js file 
+1. lightweight application bnane k lie ek single html file and multiple js file 
+2. much less JavaScript likhne pdegi program me
+3. reuse of components
+
+
+#jsx :- JavaScript synatax extension (where we write html and can also be inserted js in html syntax as you can see in app.js file in {} )
+
+/* anything inside {} known as javaScript in JSX Which is Not Possible in HTML (you can also insert a img inside braces) see in app.js files*/
+
+jsx return inside return method and it is 95% html with 5% some changes
+
+v.imp :- we can return only one element in function return which we discuss above like in app.js first we return div  only if we try to return more then one element we will get the error
+if you want to return multiple element then you have to use jsx framgent <></> in this we will enclose all the elements(div1,div2,h2 etc.)
+
+
+Note :- agar kise tag ka closing tag ni h to error milegi tag like (hr,img,input,etc) to solve this
+<hr/>
+<img src='' /> like that we have to close them
+
+{Babel compiles JSX down to React.createElement() calls.}
+
+These two examples are identical:
+
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+
+bable compile above(jsx) synatx to niche vale syntax me
+
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+
+React.createElement() performs a few checks to help you write bug-free code but essentially it creates an object like this:
+
+// Note: this structure is simplified
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
+
+//Props:- basically the value we send to the component like me did in app.js and used in nav.js
+Types :- in Navbar file
