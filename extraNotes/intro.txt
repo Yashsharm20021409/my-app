@@ -64,4 +64,20 @@ const element = {
 These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
 
 //Props:- basically the value we send to the component like me did in app.js and used in nav.js
-Types :- in Navbar file
+in navbar.js file we use it like props.NameOfPropes Which we pass from app.js
+
+types:-
+
+
+//State(useState)
+it is a hook(Hooks are a new addition in React 16.8 They let you use state and other React
+features without writing a class.) bina class bny state ko use krna me help jo krte h unhe hooks bolte h
+diff types:
+1.useState
+2.useEffect 
+etc
+
+jb bhi hm count ko use krenge or jha bhi update krnege(using setCount) vo whi pe update hota jyga without reloding our page (this is basically useState or state)
+
+// Declare a new state variable, which we'll call "count"
+use like { const [count, setCount] = useState(0); } after importing
