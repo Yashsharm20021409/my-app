@@ -1,7 +1,7 @@
 // Component file Name Must Be Start From Capital Letter Navbar(N is cap here)
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Export kie h ki app.js me import krske
 export default function Navbar(props) {
@@ -12,9 +12,10 @@ export default function Navbar(props) {
         >
         <div className="container-fluid">
         {/* link and to used in place of a and href */}
-          <Link className="navbar-brand" to="/">
+          {/* <Link className="navbar-brand" to="/"> */}
+          <a className="navbar-brand" href="#">
             {props.title}
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -30,16 +31,17 @@ export default function Navbar(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 {/* link and to used in place of a and href */}
-                <Link className="nav-link active" aria-current="page" to="/">
+                {/* <Link className="nav-link active" aria-current="page" to="/"> */}
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
-                </Link>
+                </a>
               </li>
-              <li className="nav-item">
-                {/* link and to used in place of a and href */}
+              {/* <li className="nav-item">
+                 link and to used in place of a and href 
                 <Link className="nav-link" to="/about">
                   {props.aboutText}
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className={`form-check form-switch text-${props.mode === 'light'?'dark':'light'}`}>
               <input
