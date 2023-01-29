@@ -81,3 +81,36 @@ jb bhi hm count ko use krenge or jha bhi update krnege(using setCount) vo whi pe
 
 // Declare a new state variable, which we'll call "count"
 use like { const [count, setCount] = useState(0); } after importing
+
+
+
+//react Router Setup :- use to switch btw pages(components)
+without reloading the page just change to content of page by changing components (advantage ;-bandwidth kam hogi ,user
+ka data kam use hoga,instead of bring whole page just bring required data due to which site became light weight)
+(reloading na hona mtlb jo circle ghumta h favicon k side me )
+
+
+
+step 1:-npm install react-router-DOM
+step 2:-
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+<Router>
+      2 chje bhar h jo sbhi page me hongi or jo change krna krna h use routes k inside(we use routes insted of switch in new version of react)
+     
+      <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode={toggleMode}/>
+
+      <Alert alert={alert} />
+
+      <div className="container my-3">
+        
+        <Routes>
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/" element={ <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>}/>
+        </Routes>
+
+      </div>
+</Router>
+
+step 3:- make chnages in navbar a (anchor tag) to {link} and href tag to {to}

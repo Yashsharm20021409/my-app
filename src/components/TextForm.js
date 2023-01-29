@@ -5,11 +5,13 @@ export default function TextForm(props) {
     // console.log('UpperCase was Clicked '+text)
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert('Converted to UpperCase','success')
   };
 
   const handleLowCase = () =>{
     let newText = text.toLocaleLowerCase();
     setText(newText)
+    props.showAlert('Converted to LowerCase','success')
   }
 
   const clearText = ()=>{
@@ -31,6 +33,7 @@ export default function TextForm(props) {
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
+    props.showAlert('Extra Space Removed','success')
 }
 
   // to copy text
@@ -40,6 +43,7 @@ export default function TextForm(props) {
     text.select();
     // copy(writeText) to clipboard
     navigator.clipboard.writeText(text.value);
+    props.showAlert('Copy to Clipboard','success')
 }
 
   const [text, setText] = useState("");
